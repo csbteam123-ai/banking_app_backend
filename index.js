@@ -3,6 +3,8 @@ let app = express();
 let dotenv = require('dotenv');
 let cors = require('cors');
 
+const PORT = process.env.PORT || 5000;
+
 app.use(cors())
 
 dotenv.config();
@@ -18,7 +20,7 @@ app.use("/",getpg,userRoute)
 
 
 
-app.listen(3000,()=>{
+app.listen(,()=>{
     connectToMongo();
     
     console.log("server is runing")
