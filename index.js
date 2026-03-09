@@ -20,7 +20,7 @@ app.use("/",getpg,userRoute)
 
 
 
-app.listen(,()=>{
+app.listen(PORT,()=>{
     connectToMongo();
     
     console.log("server is runing")
