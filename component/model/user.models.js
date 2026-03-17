@@ -38,7 +38,11 @@ const userModel = mongoose.Schema({
     },
     Transactions:[{
         type:mongoose.Schema.Types.ObjectId,
-        ref:"transaction"
+        ref:"Transaction"
+    }],
+    card:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"card"
     }]
 })
 
