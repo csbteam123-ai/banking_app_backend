@@ -5,7 +5,7 @@ const generateTransactionID = require("../../config/TransactionID");
 const store_id = process.env.SSLCZ_STORE_ID;
 const store_passwd = process.env.SSLCZ_STORE_PASS;
 const is_live = false;
-const domain = "https://banking-app-z67k.onrender.com"
+const domain = "https://banking-app-backend-0ls2.onrender.com"
 const userid = "";
 const addMney = (req, res) => {
   const { amount, cus_name, cus_email } = req.body;
